@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-  }
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -18,7 +19,8 @@ body {
     font-size: 24px; /* Set your desired font size here */
 }
 
-#newHadith {
+#newHadith,
+#previousHadith {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -26,19 +28,29 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-#newHadith:hover{
-    background-color: #2b00ff;
-}
-#previousHadith{
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#previousHadith:hover{
+
+#newHadith:hover,
+#previousHadith:hover {
     background-color: #2b00ff;
 }
 
-  
+/* Media Query for phones */
+@media only screen and (max-width: 767px) {
+    #textArea {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media Query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #textArea {
+        font-size: 28px; /* Adjust font size for tablets */
+    }
+}
+
+/* Media Query for desktops */
+@media only screen and (min-width: 1024px) {
+    #textArea {
+        font-size: 32px; /* Adjust font size for desktops */
+    }
+}
